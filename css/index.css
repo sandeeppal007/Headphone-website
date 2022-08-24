@@ -24,7 +24,7 @@ html{
 nav{
     display:flex;
     justify-content:space-between;
-    padding: 2rem;
+    padding: 2rem 10rem;
     align-items: center;
     font-size: 3rem;
     font-family: 'Fredoka One ',sans-serif;
@@ -37,8 +37,18 @@ nav{
     align-items: center;
     flex-direction: row;
     gap: 6rem;
+    font-size: 1.5rem;
+
    
 
+}
+
+.logo{
+    width: 10%;
+}
+
+.nav-icons{
+    width: 20%;
 }
 
 
@@ -48,8 +58,11 @@ nav{
     cursor: pointer;
 
 }
+.menu{
+    display: none;
+}
 .main{
-    width: 100%;
+height: 100vh;
   
 }
 
@@ -59,20 +72,20 @@ nav{
     justify-content:center;
     align-items: center;
     flex-direction: row;
-    /* margin-top: 2rem; */
+   
    
 }
 
 .left-section{
     display:flex;
     justify-content:center;
-    /* align-items: center; */
+
     flex-direction: column;
     text-align: start;
-    /* font-size: 3rem; */
+   
     gap: 2rem;
     margin-left: 3rem;
-    /* margin-top: 10rem; */
+  
     width: 50%;
 
 }
@@ -101,14 +114,13 @@ nav{
     background-color: var(--primary);
     border-radius: 50%;
     padding: .4rem;
-    /* margin-top: 1rem; */
-/* text-align: center; */
+
 }
 .sub-headlines h5{
     display:flex;
     justify-content:flex-start;
     align-items: center;
-    text-align: center;
+ 
     gap: 1.5rem;
     font-size:3rem;
     font-family: 'Fredoka One',sans-serif;
@@ -121,13 +133,13 @@ nav{
 }
 
 .text{
-    /* height: 10rem; */
+ 
     width: 80%;
     overflow: hidden;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Fredoka One',sans-serif;
     color: #758283;
-margin-top: 5rem;
+margin-top: 3rem;
 line-height: 2;
 }
 
@@ -144,6 +156,7 @@ line-height: 2;
 }
 .btn{
  margin-top: 2rem;
+
 }
 
 
@@ -168,8 +181,20 @@ line-height: 2;
     gap: 1rem;
 }
 .headphone-div{
-    position: relative;
+    /* position: relative; */
+    
+  
 
+
+}
+.headphone{
+    margin: auto   ;
+}
+
+.headpone-img{
+    width: 85%;
+
+  
 }
 
 .discount{
@@ -198,16 +223,23 @@ line-height: 2;
     justify-content:center;
     align-items: center;
     gap: 3rem;
+    margin-bottom: 1rem;
 
 }
 
 .dot{
  
   
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 2rem;
     
+}
+
+.dot-btn{
+    margin-right: 10rem;
+
+  
 }
 
 .yellow-dot{
@@ -222,5 +254,112 @@ line-height: 2;
 .black-dot{
     background-color: #000000;
 
+
+}
+
+
+
+
+
+/* medai query */
+
+@media only screen and (max-width: 600px) {
+
+ 
+    html{
+        font-size: 45.5%;      
+    
+    }
+
+  
+
+    .intro-section{
+        flex-direction: column;
+        gap: 4rem;
+        margin-top: 10%;
+    }
+
+    .headpone-img{
+        width: 100%;
+      
+    }
+
+    .headphone{
+        width: 60%;
+      
+
+    }
+    .sub-headlines{
+        margin-left: 0;
+        font-size: 8rem;
+       
+    
+    }
+
+    .action-btns{
+        flex-direction: row;
+        justify-content: space-between;
+
+
+
+ 
+ 
+   
+  
+    }
+    .action-btn{
+        margin-left:0;
+    }
+    .left-section{
+        width: 100%;
+    }
+    .left-section h1{
+      
+    }
+    nav{
+        justify-content: space-between;
+        padding: 2rem 4rem;
+    }
+    .nav-item, .nav-icons{
+        display: none;
+       
+    }
+    .text{
+        font-size: 1.8rem;
+    }
+    .nav-icons{
+        width: 100%;
+    }
+    .logo{
+        width: 25%;
+    }
+    .headphone-div{
+      
+    }
+  
+    .discount{
+        top: 38%;
+        right: 65%;
+        width: 25%;
+    }
+    .discount-content{
+      
+        top: 47%;
+        right: 58%;
+        font-size: 1.5rem;
+        
+    }
+    .headpone-img{
+        width: 100%;
+    
+      
+    }
+    .dot-btn{
+        margin-right: 0;
+        padding-bottom: 3rem;
+    
+      
+    }
+    
 
 }

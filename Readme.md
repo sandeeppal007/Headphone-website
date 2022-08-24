@@ -44,4 +44,4 @@
 🔁 Update comes in future 
 
 
-🔗[Live Link](https://super-valkyrie-421073.netlify.app/)
+🔗[Live Link](https://lucky-capybara-cc88e5.netlify.app/)
